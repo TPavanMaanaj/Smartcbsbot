@@ -187,7 +187,7 @@ This section describes the step-by-step process to deploy SmartBOT on a cloud se
 
 ---
 
-## 🖥️ Step 1: Create EC2 Instance
+### 🖥️ Step 1: Create EC2 Instance
 
 1. Login to AWS Console  
 2. Navigate to **EC2 → Launch Instance**  
@@ -203,14 +203,14 @@ This section describes the step-by-step process to deploy SmartBOT on a cloud se
 
 ---
 
-## 🔐 Step 2: Connect to Server
+### 🔐 Step 2: Connect to Server
 
 ```bash
 ssh -i your-key.pem ec2-user@your-public-ip
 
 ---
 
-## 📦 Step 3: Install Dependencies
+### 📦 Step 3: Install Dependencies
 
 ```bash
 sudo yum update -y
@@ -228,7 +228,7 @@ sudo yum install git -y
 
 ---
 
-## 📥 Step 4: Clone Repository
+### 📥 Step 4: Clone Repository
 
 Clone the SmartBOT project from GitHub and navigate into the project directory:
 
@@ -238,7 +238,7 @@ cd SmartBOT
 
 ---
 
-## ⚙️ Step 5: Deploy Backend (Spring Boot)
+### ⚙️ Step 5: Deploy Backend (Spring Boot)
 
 Navigate to the backend directory and build the project using Maven:
 
@@ -248,7 +248,7 @@ mvn clean install
 
 ---
 
-## 🎨 Step 6: Deploy Frontend (React + Vite)
+### 🎨 Step 6: Deploy Frontend (React + Vite)
 
 Navigate to the frontend project directory and install dependencies:
 
@@ -258,7 +258,7 @@ npm install
 
 ---
 
-## 🤖 Step 7: Setup Ollama (AI Engine)
+### 🤖 Step 7: Setup Ollama (AI Engine)
 
 Install Ollama to run local LLM models:
 
@@ -267,7 +267,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 
 ---
 
-## 🔄 Step 8: Run Services in Background
+### 🔄 Step 8: Run Services in Background
 
 Install PM2 to manage and keep services alive:
 
@@ -276,7 +276,7 @@ npm install -g pm2
 
 ---
 
-## 🌐 Step 9: Configure Nginx (Reverse Proxy)
+### 🌐 Step 9: Configure Nginx (Reverse Proxy)
 
 Install Nginx:
 
@@ -287,7 +287,7 @@ sudo systemctl enable nginx
 
 ---
 
-## 🔒 Step 10: Enable HTTPS (SSL)
+### 🔒 Step 10: Enable HTTPS (SSL)
 
 Install Certbot for SSL:
 
