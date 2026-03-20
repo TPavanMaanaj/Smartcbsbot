@@ -1,0 +1,6 @@
+target/
+*.jar
+node_modules/
+dist/
+build/
+bin/
