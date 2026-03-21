@@ -3,7 +3,7 @@
 
     // Configuration
     const CONFIG = {
-        apiEndpoint: 'https://smartbot.smartcbs.net/api/chat',
+        apiEndpoint: '               ',
         botName: 'SmartBot Assistant',
         botSubtitle: 'SmartCBS Banking Platform',
         welcomeMessage: "Hello! I'm SmartBot Assistant from SmartCBS. How can I help you today?"
